@@ -1,81 +1,28 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-        html,
-        body {
-            height: 100vh;
-            font-family: 'Press Start 2P', cursive;
-            font-weight: bold;
-            color: green;
-            letter-spacing: 5px;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-size: cover;
-            background: black;
-            margin: 0;
-        }
-
-        .type-wrap {
-            font-size: 50px;
-            padding: 20px;
-        }
-
-        /* the above is for styling puposes only */
-
-        .typed-cursor {
-            opacity: 1;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div class="type-wrap">
-        <span id="typed" style="white-space:pre;" class="typed">
-        </span>
+    <div class="parent">
+        <div class="img-div">
+            <img src="assets/cartoon.png" height="150">
+            <p class="img-name">Abid Zaidi</p>
+        </div>
+
+        <div class="content-div">
+            <div class="type-wrap">
+                <span id="typed" style="white-space:pre;" class="typed">
+                </span>
+            </div>
+        </div>
     </div>
 
 
-    <script type="text/javascript">
-        $("#typed").typed({
-            strings: ["Loading ...", ""],
-            typeSpeed: 100,
-            startDelay: 0,
-            backSpeed: 60,
-            backDelay: 2000,
-            loop: true,
-            cursorChar: "|",
-            contentType: 'html'
-        });
-
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
